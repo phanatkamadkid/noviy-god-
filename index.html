@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>С Новым 2026 Годом!</title>
+  <link rel="stylesheet" href="cheka.css" />
+</head>
+<body>
+  <div class="snowflakes"></div>
+
+  <div class="container">
+    <h1 class="title">✨ С Новым Годом! ✨</h1>
+
+    <!-- ТАЙМЕР -->
+    <div class="timer" id="timer">
+      <div class="time-unit"><span id="days">00</span><br>дней</div>
+      <div class="time-unit"><span id="hours">00</span><br>часов</div>
+      <div class="time-unit"><span id="minutes">00</span><br>минут</div>
+      <div class="time-unit"><span id="seconds">00</span><br>секунд</div>
+    </div>
+
+    <!-- ИНТЕРАКТИВНЫЕ ЭЛЕМЕНТЫ -->
+    <div class="gifts">
+      <div class="gift" onclick="openGift(this)">🎁 Подарок 1</div>
+      <div class="gift" onclick="openGift(this)">🎁 Подарок 2</div>
+      <div class="gift" onclick="openGift(this)">🎁 Подарок 3</div>
+    </div>
+
+    <div class="snowman" id="snowman">⛄</div>
+    <p class="wish" id="wish"></p>
+    <div class="firework" id="firework"></div>
+    <button class="firework-btn" onclick="launchFirework()">🎆 Запустить фейерверк!
+        
+    </button>
+  </div>
+
+  <script src="pistolet.js"></script>
+</body>
+</html>
